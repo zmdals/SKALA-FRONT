@@ -1,7 +1,7 @@
 # SKALA-FRONT
 
 SKALA 부트캠프 프론트엔드 과정 실습 결과물입니다.
-HTML · CSS · JavaScript 기초부터 종합 프로젝트까지의 과정을 담고 있습니다.
+HTML · CSS · JavaScript 기초부터 종합 프로젝트 과제 입니다.
 
 ## 프로젝트 구조
 
@@ -51,22 +51,4 @@ SKALA-FRONT/
 
 ## 실행 방법
 
-종합실습 ③④는 ES 모듈을 사용하므로 **로컬 서버**로 실행해야 합니다.
-
-```bash
-# VS Code Live Server (권장)
-index.html 우클릭 → Open with Live Server
-
-# 또는 터미널
-cd missions
-python -m http.server 5500
-# http://localhost:5500 접속
-```
-
-## 기술 스택
-
-HTML5 · CSS3 · JavaScript (ES6+)
-
-## Author
-
-임승민 (Seungmin Lim) · SKALA 1기 · 2026.07
+종합실습 ④는 ES 모듈을 사용하므로 **로컬 서버**로 실행해야 합니다.
