@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3 {
+    font-family: "Jua", sans-serif;
+}
+
+header {
+    position: fixed;
+    padding-left: 45px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1001;
+    background-color: #111111; /* 거의 검정에 가까운 다크 그레이 */
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05); /* 어두운 배경에선 흰색 계열 그림자가 은은하게 보임 */
+}
+
+main {
+    padding-top: 130px;
+}
+
+nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 8px 20px;
+    background-color: #1A1A1A;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.03);
+}
+
+nav a {
+    color: #CBD5E1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #60A5FA;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 25px;
+}
+
+#background {
+    background-image: linear-gradient(to bottom, transparent 50%, black 100%),
+                       url("../images/travel/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+#background h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#background p {
+    font-size: 1.1rem;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+#landmarks, #food, #videos{
+    margin-top: 200px;
+}
+
+#landmarks {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.landmarks-images, .food-images {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+#landmarks figure {
+    margin: 0;
+    width: 400px;
+}
+
+#landmarks img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease;
+    border-radius: 8px;
+}
+
+#landmarks figure:hover img {
+    transform: scale(1.2);
+}
+
+#landmarks figcaption {
+    padding: 30px 0px;
+    text-align: center;
+}
+
+#food {
+    display: flex;
+    gap: 40px;
+    padding: 40px 60px;
+    justify-content: center;
+}
+
+#food article {
+    flex: 3;
+    max-width: 900px;
+}
+
+#food aside {
+    flex: 1;
+    max-width: 280px;
+}
+
+.food-images {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#food figure {
+    margin: 0;
+    width: 280px;
+}
+
+#food figure img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+#food figcaption {
+    padding: 10px 0;
+    line-height: 1.6;
+    font-size: 0.85rem;
+    color: #CBD5E1;
+}
+
+#food .foodName {
+    color: #60A5FA;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+#food aside li {
+    margin: 12px 0;
+    line-height: 1.5;
+    list-style: none;
+    font-size: 0.9rem;
+    color: #CBD5E1;
+}
+
+#food aside ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+#videos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#videos video {
+    width: 800px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    color:#CBD5E1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+#travelTips{
+    cursor: pointer;
+}
+
+#travelTips :hover{
+    color: dimgray;
+}

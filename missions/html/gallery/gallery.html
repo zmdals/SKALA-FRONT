@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="반응형 상품 카드 갤러리 페이지">
+    <meta name="author" content="임승민">
+    <link rel="stylesheet" href="../../css/gallery.css">
+    <title>Slim SHOP</title>
+</head>
+<body>
+    <div id="top"></div>
+    <div class="container">
+        <header>
+            <h2>Slim SHOP</h2>
+            <ul>
+                <li><a href="new.html">신상품</a></li>
+                <li><a href="best.html">베스트</a></li>
+                <li><a href="discount.html">세일</a></li>
+            </ul>
+            <button id="switchBtn">🌙 다크모드</button>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>오늘의 추천 상품</h1>
+                <p>브라우저 폭을 줄이면 반응합니다.</p>
+            </section>
+            <section class="grid-container">
+                <div class="card">
+                    <img src="../../images/gallery/shoes.jpg" alt="컨버스화">
+                    <h3 class="itemName">컨버스화</h3>
+                    <span class="itemPrice">89,000원</span>
+                </div>
+
+                <div class="card">
+                    <img src="../../images/gallery/longsleeve.jpg" alt="스트라이프 롱슬리브">
+                    <h3 class="itemName">스트라이프 롱슬리브</h3>
+                    <span class="itemPrice">39,000원</span>
+                </div>
+
+                <div class="card">
+                    <img src="../../images/gallery/jeans.jpg" alt="청바지(블랙)">
+                    <h3 class="itemName">청바지(블랙)</h3>
+                    <span class="itemPrice">59,000원</span>
+                </div>
+
+                <div class="card">
+                    <img src="../../images/gallery/shorts.webp" alt="카고 반바지">
+                    <h3 class="itemName">카고 반바지</h3>
+                    <span class="itemPrice">29,000원</span>
+                </div>
+
+                <div class="card">
+                    <img src="../../images/gallery/tshirt.jpeg" alt="나이키 티셔츠">
+                    <h3 class="itemName">나이키 티셔츠</h3>
+                    <span class="itemPrice">35,000원</span>
+                </div>
+
+                <div class="card">
+                    <img src="../../images/gallery/flipflop.jpeg" alt="슬리퍼">
+                    <h3 class="itemName">삼선 슬리퍼</h3>
+                    <span class="itemPrice">6,000원</span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="#top"> ↑ 맨 위로 이동하기</a>
+            <p>2026 SKALA-FRONT - 종합실습 3 - 임승민(Seungmin Lim)</p>
+        </footer>
+    </div>
+    <script>
+        const switchBtn = document.getElementById("switchBtn");
+
+        switchBtn.addEventListener("click", function () {
+            const body = document.body;
+            body.classList.toggle("dark"); //toggle은 없으면 추가, 있으면 삭제
+            if (body.classList.contains("dark")) { //버튼 텍스트 변경
+                switchBtn.textContent = "☀️ 라이트모드";
+            } else {
+                switchBtn.textContent = "🌙 다크모드";
+            }
+        });
+    </script>
+</body>
+</html>

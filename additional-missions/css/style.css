@@ -1,0 +1,66 @@
+:root {
+  --bg-color: #FFFBF5;       /* 아주 옅은 웜 아이보리 - 차갑지 않고 포근한 느낌 */
+  --card-bg: #FFFFFF;
+  --text-main: #2D2A26;      /* 완전 검정 대신 부드러운 다크 브라운톤 */
+  --text-sub: #8A8378;
+  --accent: #FF8552;         /* 코랄/오렌지 - 활기차고 친근한 포인트 */
+  --accent-hover: #E8703E;
+  --accent-soft: #FFE8DC;    /* 배지, 강조 배경 등에 쓸 연한 톤 */
+  --border: #F0EBE3;
+}
+.container{
+    align-items: center;
+}
+body{
+    font-family: "Jua", sans-serif;
+    background-color: #FFFBF5;
+    color: #1E2430;
+}
+header{
+    background-color: #FFFFFF; 
+    border-bottom: 1px solid #E5E7EB;;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 10;
+    padding-top: 15px;
+
+}
+
+input[type="submit"]{
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+input[type="submit"]:hover{
+    background-color: #4338CA;
+}
+
+footer{
+    text-align: center;
+}
+
+nav{
+    margin-top: 125px;
+
+}
+
+#signUp{
+    margin-top: 150px;
+}
+
+hr{
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px black inset;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color:hotpink;
+}

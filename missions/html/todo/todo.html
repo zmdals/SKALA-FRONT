@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="인터랙티브 할 일 관리 앱">
+    <meta name="author" content="임승민">
+    <link rel="stylesheet" href="../../css/todo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="../../js/app.js"></script>
+    <title>SLIM TODO-LIST</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>SLIM TODO-LIST</h1>
+         <p id="todayWord">기본 문구</p>
+        </header>
+        <main>
+            <div class="addBar">
+                <input type="text" id="todoInput" placeholder="할 일을 입력하세요.">
+                <button id="addBtn">추가</button>
+            </div>
+            <div class="filters">
+                <button data-filter="all" class="active">전체</button>
+                <button data-filter="processing">진행중</button>
+                <button data-filter="done">완료</button>
+            </div>
+            <div class="list">
+                <ul>
+                    <!--JS로 목록 삽입-->
+                </ul>
+                <p id="summary"></p>
+            </div>
+        </main>
+        <footer>
+            <p>2026 SKALA-FRONT - 종합실습 4 - 임승민(Seungmin Lim)</p>
+        </footer>
+    </div>
+</body>
+</html>

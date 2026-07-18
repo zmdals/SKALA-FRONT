@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>업다운 게임</title>
+</head>
+<body>
+    <button id="startBtn">게임 시작</button>
+    <button id="calAvgBtn">평균 계산</button>
+    <button id="myBagBtn">소지품 검사</button>
+    <script src="../script/upDown.js"></script>
+    <script src="../script/grade.js"></script>
+    <script src="../script/bag.js"></script>
+    <script>
+        document.getElementById("startBtn").addEventListener("click", startGame);
+        document.getElementById("calAvgBtn").addEventListener("click",calculateAvg);
+        document.getElementById("myBagBtn").addEventListener("click",showMyBag);
+    </script>
+</body>
+</html>
