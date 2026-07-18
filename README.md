@@ -7,7 +7,11 @@ HTML · CSS · JavaScript 기초부터 종합 프로젝트 과제 입니다.
 
 ```
 SKALA-FRONT/
-├── missions/            # 김성영 선생님 종합 과제
+├── missions/            # 종합 과제 폴더
+│   ├── 종합실습1 정리.pdf               # 과제1 정리(캡쳐&평가)
+│   ├── 종합실습2 정리.pdf               # 과제2 정리(캡쳐&평가)
+│   ├── 종합실습3 정리.pdf               # 과제3 정리(캡쳐&평가)
+│   ├── 종합실습4 정리.pdf               # 과제4 정리(캡쳐&평가)
 │   ├── index.html                # 시작 페이지
 │   ├── css/
 │   │   ├── signUp.css            # 종합실습① 회원가입
@@ -35,10 +39,11 @@ SKALA-FRONT/
 │   └── videos/
 │       └── travel/               # 여행지 영상
 |
+|
 └── additional-missions/  # 교안 추가과제 (프로필, 여행, 시간표 등)
     ├── css/
     │   └── style.css
-    └── html/                     
+    └── html/                   
 ```
 
 ## 종합실습 요약
