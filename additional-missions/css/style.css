@@ -1,54 +1,79 @@
-:root {
-  --bg-color: #FFFBF5;       /* 아주 옅은 웜 아이보리 - 차갑지 않고 포근한 느낌 */
-  --card-bg: #FFFFFF;
-  --text-main: #2D2A26;      /* 완전 검정 대신 부드러운 다크 브라운톤 */
-  --text-sub: #8A8378;
-  --accent: #FF8552;         /* 코랄/오렌지 - 활기차고 친근한 포인트 */
-  --accent-hover: #E8703E;
-  --accent-soft: #FFE8DC;    /* 배지, 강조 배경 등에 쓸 연한 톤 */
-  --border: #F0EBE3;
-}
-.container{
-    align-items: center;
-}
-body{
+body {
     font-family: "Jua", sans-serif;
-    background-color: #FFFBF5;
+    background-color: #FFFFFF;
     color: #1E2430;
+    margin: 0;
+    padding-top: 280px;
 }
-header{
-    background-color: #FFFFFF; 
-    border-bottom: 1px solid #E5E7EB;;
+
+header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
     position: fixed;
     width: 100%;
     top: 0;
-    left: 10;
-    padding-top: 15px;
-
+    left: 0;
+    padding: 20px 32px;
+    z-index: 100;
 }
 
-input[type="submit"]{
-    background-color: #4F46E5;
-    color: white;
-    border: none;
-    border-radius: 15px;
+header h1 {
+    margin: 0 0 8px;
 }
 
-input[type="submit"]:hover{
-    background-color: #4338CA;
+header p {
+    margin: 0 0 12px;
+    color: #8A8378;
 }
 
-footer{
-    text-align: center;
+header h3 {
+    margin: 8px 0;
 }
 
-nav{
-    margin-top: 125px;
-
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#signUp{
-    margin-top: 150px;
+main {
+    max-width: 720px;
+    margin: 0;
+    padding: 0 32px 60px;
+}
+
+main h2 {
+    margin-bottom: 16px;
+}
+
+main section {
+    margin-bottom: 32px;
+}
+
+main article h4 {
+    margin: 20px 0 8px;
+}
+
+main article p {
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+
+main button {
+    padding: 10px 20px;
+    margin-right: 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+main button:hover {
+    background: var(--accent-soft);
 }
 
 hr{
@@ -59,6 +84,7 @@ hr{
 
 a{
     color:black;
+    text-decoration: none;
 }
 
 a:hover{
