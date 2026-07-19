@@ -20,7 +20,6 @@ SKALA-FRONT/
 │   │   └── todo.css              # 종합실습④ 투두
 │   ├── js/
 │   │   ├── signupResult.js       # 종합실습① 쿼리스트링 → table
-│   │   ├── todo.js               # 종합실습③ 다크모드 토글
 │   │   ├── app.js                # 종합실습④ 화면 모듈
 │   │   └── storage.js            # 종합실습④ 데이터 모듈
 │   ├── html/
