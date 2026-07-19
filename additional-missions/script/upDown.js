@@ -1,3 +1,5 @@
+const startBtn = document.getElementById("startBtn");
+
 function startGame(){
     let computerrNum = Math.floor(Math.random() * 50 + 1);
     console.log(computerrNum);//정답 확인용
@@ -44,3 +46,4 @@ function startGame(){
         cnt++;
     }
 }
+startBtn.addEventListener("click", startGame);

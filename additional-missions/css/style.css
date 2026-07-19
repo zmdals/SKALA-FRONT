@@ -1,9 +1,12 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "Jua", sans-serif;
     background-color: #FFFFFF;
     color: #1E2430;
     margin: 0;
-    padding-top: 280px;
+    padding-top: 240px;
 }
 
 header {
@@ -39,8 +42,7 @@ nav ul {
 }
 
 main {
-    max-width: 720px;
-    margin: 0;
+    max-width: auto;
     padding: 0 32px 60px;
 }
 
@@ -49,21 +51,93 @@ main h2 {
 }
 
 main section {
-    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
 }
 
-main article h4 {
-    margin: 20px 0 8px;
+article {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
 }
 
-main article p {
+article h3 {
+    margin: 0 0 20px;
+}
+
+.news-item {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+article h4 {
+    margin: 0 0 10px;
+}
+
+article h5 {
+    margin: 16px 0 6px;
+    color: #6B7280;
+    font-size: 0.9rem;
+}
+
+article p {
     line-height: 1.6;
-    margin: 0 0 12px;
+    margin: 20px 20px;
+}
+
+/* aside: 카드 두 개를 세로로 */
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+aside > div {
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+aside h3 {
+    margin: 0 0 14px;
+    font-size: 1.05rem;
+}
+
+#citySelect {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-family: inherit;
+    margin-bottom: 12px;
+}
+
+#weatherResult {
+    margin: 0;
+    line-height: 1.6;
+    color: #4B5563;
+    white-space: pre-line;
+}
+
+#jsGame button {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+#jsGame button:last-child {
+    margin-bottom: 0;
 }
 
 main button {
     padding: 10px 20px;
-    margin-right: 8px;
     border: 1px solid #E5E7EB;
     border-radius: 8px;
     background: #fff;
@@ -73,20 +147,20 @@ main button {
 }
 
 main button:hover {
-    background: var(--accent-soft);
+    background: #F3F4F6;
 }
 
-hr{
-  height: 10px;
-  border: 0;
-  box-shadow: 0 10px 10px -10px black inset;
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px gray inset;
 }
 
-a{
-    color:black;
+a {
+    color: black;
     text-decoration: none;
 }
 
-a:hover{
-    color:hotpink;
+a:hover {
+    color: hotpink;
 }

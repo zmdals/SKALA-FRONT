@@ -1,3 +1,4 @@
+const calAvgBtn = document.getElementById("calAvgBtn");
 function calculateAvg(){
     const subjects = ["HTML", "CSS", "JavaScript"];
     let total = 0;
@@ -50,3 +51,5 @@ function getValidScore(subject,min,max) {
         return userInput;
     }
 }
+
+calAvgBtn.addEventListener("click",calculateAvg);

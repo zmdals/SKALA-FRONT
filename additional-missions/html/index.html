@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="../script/upDown.js" defer></script>
+    <script src="../script/grade.js" defer></script>
+    <script src="../script/bag.js" defer></script>
+    <script src="../script/weather.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <title>임승민 페이지</title>
 </head>
@@ -28,39 +32,55 @@
         </nav>
     <hr>
     </header>
-
     <main>
-        <h2>요즘 나는...</h2>
         <section>
-            <h3>관심있는 이슈</h3>
             <article>
-                <h4>🎮 오버워치 EWC</h4>
-                <p>
-                    일이 손에 안 잡히는 이유 1위. 경기 있는 날은 업무 효율이 반토막 나는 게
-                    거의 국룰입니다. 직관은 못 가도 응원은 풀타임으로 하는 중.
-                </p>
+                <h2>관심있는 이슈</h2>
 
-                <h4>🎵 씨잼(C JAMM) 새 앨범</h4>
-                <p>
-                    기다린 지 너무 오래돼서 이제는 "나온다"는 말 자체가 밈이 된 앨범.
-                    예고편만 세 번째인데 아직도 발매일이 안 잡혔다는 소식이 들릴 때마다
-                    같이 한숨 쉬는 중입니다. 그래도 나오면 무조건 1등으로 들을 예정.
-                </p>
+                <div class="news-item">
+                    <h3>🎮 오버워치 EWC</h3>
+                    <p>
+                        2026 Esports World Cup는 사우디아라비아 리야드가 아닌 파리에서 열리는 3회차 대회로, Esports Foundation과 ESL FACEIT Group이 주최합니다.
+                        2026년 이란 전쟁으로 인해 5월 20일 개최지 이전이 발표됐습니다.
+                    </p>
+                    <h4>📌 일정 및 장소</h4>
+                    <p>2026년 7월 29일~8월 2일, 파리 엑스포 포르트 드 베르사유 stc 아레나에서 진행. 경기는 매일 태평양시 오전 3시(중부유럽 정오)에 시작하며, 5일간 진행됩니다.</p>
+                    <h4>🏆 역대 우승</h4>
+                    <p>Overwatch는 EWC에 2년째 참가 중이며, 2024년 Crazy Raccoon, 2025년 Team Falcons가 우승했습니다.</p>
+                </div>
+
+                <div class="news-item">
+                    <h3>⚽️ 2026 북중미 월드컵</h3>
+                    <p>
+                        아르헨티나 vs 스페인, 세기의 결승전이 온다. FIFA 랭킹 1위 대 2위, 역대급 매치업 성사.
+                        2026 북중미 월드컵의 대미를 장식할 결승전이 한국시간 기준 7월 20일 뉴욕/뉴저지 스타디움에서 열린다.
+                    </p>
+                    <h4>📋 준결승 리뷰: 두 강팀의 완승</h4>
+                    <p>스페인은 준결승에서 프랑스를 2-0으로 완파했고, 아르헨티나는 잉글랜드를 2-1로 꺾고 결승에 합류했습니다.</p>
+                    <h4>🫵 관전 포인트</h4>
+                    <p>공격 최다 득점 1위 아르헨티나와 최소 실점 1위 스페인의 맞대결로 주목받고 있습니다.</p>
+                </div>
             </article>
-        </section>
-        
-        <section>
-            <button id="startBtn">게임 시작</button>
-            <button id="calAvgBtn">평균 계산</button>
-            <button id="myBagBtn">소지품 검사</button>
-            <script src="../script/upDown.js"></script>
-            <script src="../script/grade.js"></script>
-            <script src="../script/bag.js"></script>
-            <script>
-                document.getElementById("startBtn").addEventListener("click", startGame);
-                document.getElementById("calAvgBtn").addEventListener("click",calculateAvg);
-                document.getElementById("myBagBtn").addEventListener("click",showMyBag);
-            </script>
+
+            <aside>
+                <div id="weather-box">
+                    <h3>실시간 세계 날씨</h3>
+                    <select id="citySelect">
+                        <option value="none">선택해주세요</option>
+                        <option value="chicago">미국 시카고 Chicago</option>
+                        <option value="london">영국 런던 London</option>
+                        <option value="hanoi">베트남 하노이 Hanoi</option>
+                        <option value="tokyo">일본 도쿄 Tokyo</option>
+                    </select>
+                    <p id="weatherResult"><!--js로 변경-->도시를 선택해주세요</p>
+                </div>
+                <div id="jsGame">
+                    <h3>자바스크립트 천국</h3>
+                    <button id="startBtn">업다운 게임 시작</button>
+                    <button id="calAvgBtn">평균 계산</button>
+                    <button id="myBagBtn">소지품 검사</button>
+                </div>
+            </aside>
         </section>
     </main>
 </body>

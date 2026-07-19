@@ -1,8 +1,9 @@
+const myBagBtn = document.getElementById("myBagBtn");
 function showMyBag(){
     const myBag = [
-        {name:"노트북",count:1},
-        {name:"태블릿",count:1},
-        {name:"충전기",count:2}
+        {name:"💻 노트북",count:1},
+        {name:"📱 태블릿",count:1},
+        {name:"🔌 충전기",count:2}
     ]
     let message = "[내 가방 속 물품 목록]";
     message += "\n-----------------------";
@@ -14,3 +15,5 @@ function showMyBag(){
 
     alert(message);
 }
+
+myBagBtn.addEventListener("click",showMyBag);
