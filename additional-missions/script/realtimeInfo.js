@@ -1,3 +1,5 @@
+import { getWeather } from "./weatherAPI.js";
+
 const citySelect = document.getElementById("citySelect");
 const p = document.getElementById("weatherResult");
 
@@ -8,28 +10,19 @@ const cityLatAndLon = {
     tokyo:   { name: "일본 도쿄", lat: 35.6895, lon: 139.6917 }
 }
 
-function showWeather(e){
+async function showWeather(e){
     const selectedCity = e.target.value;
     if(selectedCity === "none"){
         p.textContent = "도시를 선택해주세요";
         return;
     }
     const info = cityLatAndLon[selectedCity]; 
-    getWeather(info);
-}
-
-async function getWeather(info){
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${info.lat}&longitude=${info.lon}&current_weather=true`;
-    try {
-        p.textContent = "날씨를 가져오는 중 입니다..."
-        const weather = await fetch(url);
-        const res = await weather.json();
-        const temp = res.current_weather.temperature;
-        const windspeed = res.current_weather.windspeed;
-        p.textContent = `${info.name}\n위도: ${info.lat}\n경도: ${info.lon}\n현재 기온: ${temp}°C\n풍속: ${windspeed}`;
-    } catch(err){
+    p.textContent = "날씨를 로딩중입니다..."
+    try{
+        const weather = await getWeather(info.lat, info.lon);
+        p.textContent = `${info.name}\n위도: ${info.lat}\n경도: ${info.lon}\n현재 기온: ${weather.temperature}°C\n풍속: ${weather.windspeed} ms`;
+    } catch(err) {
         p.textContent = "날씨를 불러오는데 실패했습니다.";
-        return;
     }
 }
 
