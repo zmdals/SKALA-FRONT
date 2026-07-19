@@ -1,6 +1,6 @@
 # SKALA-FRONT
 
-SKALA 부트캠프 프론트엔드 과정 실습 결과물입니다.
+SKALA-FRONT 실습 과제 결과물입니다.
 HTML · CSS · JavaScript 기초부터 종합 프로젝트 과제 입니다.
 
 ## 프로젝트 구조
@@ -41,8 +41,8 @@ SKALA-FRONT/
 |
 └── additional-missions/  # 교안 추가과제 (프로필, 여행, 시간표 등)
     ├── css/
-    │   └── style.css
-    └── html/                   
+    └── html/   
+    └── js/                        
 ```
 
 ## 종합실습 요약
